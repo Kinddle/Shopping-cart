@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping cart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="container">
+
+      <!-- progressbar -->
+      <ul class="progressbar list-unstyled clearfix">
+        <li class="active">Shopping cart</li>
+      </ul>
+      <p class="font-style">Hello Mr Dave Emmanuel. Not Dave - <a href="#">click here</a></p>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th></th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="remove-section">
+            <td><img class="img-responsive content-img" src="images/img_1.jpg"></td>
+            <td><p class="font-style">Alfa Romeo 156(932) 1.6 16V T. Spark (932A4), BJ 09.97-09.05</p></td>
+            <td class="font-style">£ 70.00</td>
+            <td>
+              <form>
+                <input id="demo" type="text" value="1" name="demo">
+              </form>
+            </td>
+            <td class="total font-style">£ 140.00</td>
+            <td>
+              <a class="delete-btn" href="#" role="button">
+                <img src="images/delete-btn.png">
+              </a>
+            </td>
+          </tr>
+          <tr class="remove-section">
+            <td><img class="img-responsive content-img" src="images/img_1.jpg"></td>
+            <td><p class="font-style">Alfa Romeo 156(932) 1.6 16V T. Spark (932A4), BJ 09.97-09.05</p></td>
+            <td class="font-style">£ 70.00</td>
+            <td>
+              <form>
+                <input id="demo" type="text" value="1" name="demo">
+              </form>
+            </td>
+            <td class="total font-style">£ 140.00</td>
+            <td>
+              <a class="delete-btn" href="#" role="button">
+                <img src="images/delete-btn.png">
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="total-counter clearfix">
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputCode" placeholder="Vaucher code">
+          </div>
+          <button type="submit" class="btn btn-primary">add</button>
+        </form>  
+        <ul class="list-unstyled pull-right total-count">
+          <li>
+            <span class="bold-style-text">Total products (inc VAT):</span>
+            <span class="price-column bold-style-text">£ 280.00</span>
+          </li>
+          <li>
+            <span>Delivery: <a href="#">BN6 9WA</a>
+              <form>
+                <select class="form-control">
+                  <option>Standart Next Day Delivery</option>
+                </select>
+              </form>
+            </span>
+            <span class="price-column">£ 30.00</span>
+          </li>
+          <li>
+            <span class="bold-style-text">Total (ex VAT):</span>
+            <span class="price-column bold-style-text">£ 310.00</span>
+          </li>
+          <li>
+            <span>Total VAT:</span>
+            <span class="price-column">£ 0.00</span>
+          </li>
+          <li>
+            <span class="bold-style-text">Total (inc VAT):</span>
+            <span class="price-column bold-style-text">£ 310.00</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="continie-shopping-block clearfix">
+        <a class="txt-continue" href="#">Continue shopping</a>
+        <form class="pull-right">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">I have read and agree with your <a href="#">Terms of Business</a>
+              <button type="submit" class="btn btn-primary">next</button>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js(.) scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <script src="scripts/jquery.bootstrap-touchspin.js"></script>
+        <script>
+        $( document ).ready(function() {
+            $("input[name='demo']").TouchSpin({
+            min: 0, // Minimum value.
+            max: 100, // Maximum value.
+            boostat: 5, // Boost at every nth step.
+            maxboostedstep: 10, // Maximum step when boosted.
+            step: 1, // Incremental/decremental step on up/down change.
+            stepinterval: 100, // Refresh rate of the spinner in milliseconds.
+            stepintervaldelay: 500 // Time in milliseconds before the spinner starts to spin.
+            });
+            $( ".delete-btn" ).click(function() {
+            $( ".remove-section:even" ).remove();
+          });
+        });
+        </script>
+</body>
+</html>
